@@ -3,13 +3,26 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
+insert_final_newline = true
+
+[*.{js,ts,json,yml,yaml,css,html}]
 indent_style = space
 indent_size = 2
-insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.json]
-indent_size = 2
+[*.py]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+# Binary files — DO NOT TOUCH
+[*.{pdf,xlsx,xls,docx,doc,pptx,ppt,zip,png,jpg,jpeg,gif,ico,exe,dll}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
